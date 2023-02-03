@@ -10,7 +10,6 @@ const getProducts = asyncHandler(async (req, res) => {
 
     const reqQuery = { ...req.query }
 
-    // console.log(reqQuery);
 
     //convert query into json to add dollar sign
     let queryStr = JSON.stringify(reqQuery)
@@ -19,9 +18,7 @@ const getProducts = asyncHandler(async (req, res) => {
         (match) => `$${match}`
     );
     
-    // console.log(queryStr)
 
-    //pagination, need parseInt?
     const page = parseInt(req.query.page)
     const limit = parseInt(req.query.limit)
 

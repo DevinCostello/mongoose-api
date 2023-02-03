@@ -6,7 +6,7 @@ name: String,
 
 filters: [],
 
-types: {display: String, logic: String}
+type: String
 
 
 })
