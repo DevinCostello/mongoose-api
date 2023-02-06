@@ -1,8 +1,8 @@
 const mongoose = require('mongoose')
-const dotenv = require('dotenv').config(
-    { path: path.resolve(__dirname, '../.env') }
-    )
+const dotenv = require('dotenv')
+    
 
+console.log(typeof (process.env.MONGO_URI))
 
 const connectDB = async () => {
     try {
